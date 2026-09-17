@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MAINFRAME</title>
+<meta name="description" content="Persoonlijk automatiseringssysteem van een enkele gebruiker.">
+<style>
+  :root {
+    --grond: #0A1419;
+    --vlak: #12222A;
+    --lijn: #1E3742;
+    --inkt: #E6F1F2;
+    --gedempt: #7D97A0;
+    --cyaan: #4FD8E8;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    padding: 48px 20px;
+    background: var(--grond);
+    color: var(--inkt);
+    font: 16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+  main { max-width: 640px; margin: 0 auto; }
+  .merk { display: flex; align-items: center; gap: 11px; margin-bottom: 36px; }
+  .punt {
+    width: 10px; height: 10px; border-radius: 50%;
+    background: var(--cyaan);
+    box-shadow: 0 0 0 4px rgba(79, 216, 232, .15);
+  }
+  h1 { margin: 0; font-size: 15px; font-weight: 600; letter-spacing: .2em; }
+  h2 {
+    font-size: 13px; font-weight: 600; letter-spacing: .12em;
+    text-transform: uppercase; color: var(--gedempt);
+    margin: 34px 0 10px;
+  }
+  p { margin: 0 0 14px; }
+  ul { margin: 0 0 14px; padding-left: 20px; }
+  li { margin-bottom: 6px; }
+  .lead { font-size: 19px; line-height: 1.5; margin-bottom: 26px; }
+  a { color: var(--cyaan); }
+  footer {
+    margin-top: 44px; padding-top: 20px;
+    border-top: 1px solid var(--lijn);
+    font-size: 14px; color: var(--gedempt);
+  }
+</style>
+</head>
+<body>
+<main>
+  <div class="merk"><span class="punt"></span><h1>MAINFRAME</h1></div>
+
+  <p class="lead">Een persoonlijk automatiseringssysteem. Eén gebruiker, geen dienst,
+  geen klanten.</p>
+
+  <p>MAINFRAME is het systeem waarmee ik mijn eigen werk automatiseer. Het brengt mijn
+  dag samen op één scherm en laat AI-assistenten taken uitvoeren die ik anders met de
+  hand zou doen.</p>
+
+  <h2>Wat het doet</h2>
+  <ul>
+    <li>Een dagoverzicht met mijn agenda, taken, mail die antwoord nodig heeft en het weer</li>
+    <li>Een ochtendbriefing die elke dag automatisch wordt samengesteld</li>
+    <li>AI-assistenten die zelfstandig werk uitvoeren en waar ik akkoord op geef</li>
+  </ul>
+
+  <h2>Voor wie</h2>
+  <p>Voor mij alleen. Er zijn geen accounts, geen registratie en geen andere gebruikers.
+  Het draait op mijn eigen laptop en is via een privénetwerk alleen voor mijn eigen
+  apparaten bereikbaar.</p>
+
+  <h2>Google-gegevens</h2>
+  <p>Het systeem gebruikt de Google-diensten van één account: Gmail, Agenda en Taken.
+  Die gegevens worden niet gedeeld en niet verkocht. Wat er precies mee gebeurt staat
+  in het <a href="/privacy.html">privacybeleid</a>.</p>
+
+  <footer>
+    <p><a href="/privacy.html">Privacybeleid</a></p>
+    <p>Contact: contentagentmk1@gmail.com</p>
+  </footer>
+</main>
+</body>
+</html>

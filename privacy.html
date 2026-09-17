@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacybeleid - MAINFRAME</title>
+<meta name="description" content="Wat MAINFRAME met Google-gegevens doet.">
+<style>
+  :root {
+    --grond: #0A1419;
+    --vlak: #12222A;
+    --lijn: #1E3742;
+    --inkt: #E6F1F2;
+    --gedempt: #7D97A0;
+    --cyaan: #4FD8E8;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    padding: 48px 20px;
+    background: var(--grond);
+    color: var(--inkt);
+    font: 16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+  main { max-width: 680px; margin: 0 auto; }
+  .terug { font-size: 14px; color: var(--gedempt); text-decoration: none; }
+  .terug:hover { color: var(--cyaan); }
+  h1 { font-size: 27px; margin: 22px 0 6px; letter-spacing: -.01em; }
+  .datum { color: var(--gedempt); font-size: 14px; margin: 0 0 30px; }
+  h2 {
+    font-size: 13px; font-weight: 600; letter-spacing: .12em;
+    text-transform: uppercase; color: var(--gedempt);
+    margin: 34px 0 10px;
+  }
+  p { margin: 0 0 14px; }
+  ul { margin: 0 0 14px; padding-left: 20px; }
+  li { margin-bottom: 7px; }
+  a { color: var(--cyaan); }
+  table { width: 100%; border-collapse: collapse; margin: 0 0 16px; font-size: 15px; }
+  th, td { text-align: left; padding: 9px 12px 9px 0; border-bottom: 1px solid var(--lijn); vertical-align: top; }
+  th { color: var(--gedempt); font-weight: 600; font-size: 13px; }
+  .let-op {
+    background: var(--vlak);
+    border-left: 3px solid var(--cyaan);
+    border-radius: 0 8px 8px 0;
+    padding: 14px 16px;
+    margin: 0 0 16px;
+  }
+  .let-op p:last-child { margin-bottom: 0; }
+  footer {
+    margin-top: 44px; padding-top: 20px;
+    border-top: 1px solid var(--lijn);
+    font-size: 14px; color: var(--gedempt);
+  }
+</style>
+</head>
+<body>
+<main>
+  <a class="terug" href="/">&larr; MAINFRAME</a>
+  <h1>Privacybeleid</h1>
+  <p class="datum">Laatst bijgewerkt: 17 september 2026</p>
+
+  <p>MAINFRAME is een persoonlijk automatiseringssysteem met één gebruiker. Er zijn geen
+  andere gebruikers, geen registratie en geen dienstverlening aan derden. Dit beleid
+  beschrijft wat het systeem doet met de Google-gegevens van dat ene account.</p>
+
+  <h2>Welke gegevens</h2>
+  <table>
+    <tr><th>Bron</th><th>Wat er gelezen wordt</th><th>Waarvoor</th></tr>
+    <tr>
+      <td>Gmail</td>
+      <td>Afzender, onderwerp, datum en het begin van de berichttekst van ongelezen
+          post uit de inbox van de laatste vijf dagen</td>
+      <td>Beoordelen welke berichten een antwoord nodig hebben</td>
+    </tr>
+    <tr>
+      <td>Google Agenda</td>
+      <td>Titel, tijd en locatie van afspraken van vandaag</td>
+      <td>Het dagoverzicht tonen</td>
+    </tr>
+    <tr>
+      <td>Google Taken</td>
+      <td>Titel en einddatum van openstaande taken</td>
+      <td>Het dagoverzicht tonen en taken kunnen afvinken</td>
+    </tr>
+  </table>
+
+  <h2>Wat het systeem wijzigt</h2>
+  <p>Alleen op mijn eigen opdracht, nooit uit zichzelf:</p>
+  <ul>
+    <li>Een taak afvinken</li>
+    <li>Een bericht als gelezen markeren</li>
+    <li>Een e-mail versturen naar het eigen account, voor de dagelijkse briefing</li>
+  </ul>
+
+  <h2>Verwerking door derden</h2>
+  <div class="let-op">
+    <p>Om te beoordelen welke berichten aandacht nodig hebben, wordt de afzender, het
+    onderwerp en het begin van de berichttekst voorgelegd aan een taalmodel van
+    Anthropic, bereikt via OpenRouter. Dat gebeurt per bericht en het resultaat is een
+    oordeel van één zin.</p>
+    <p>Die tekst wordt daar niet gebruikt om modellen te trainen en niet langer bewaard
+    dan nodig voor het beantwoorden van de aanvraag.</p>
+  </div>
+  <p>Verder gaan er geen Google-gegevens naar andere partijen. Er wordt niets verkocht,
+  gedeeld of geadverteerd.</p>
+
+  <h2>Opslag en bewaartermijn</h2>
+  <ul>
+    <li><strong>Op mijn eigen laptop:</strong> opgehaalde gegevens staan in een
+        tijdelijke cache die na vijf minuten tot een uur vervalt, afhankelijk van de
+        bron.</li>
+    <li><strong>Toegangssleutels:</strong> het Google-token staat versleuteld op mijn
+        laptop en als beveiligd geheim bij de cloudprovider die de dagelijkse briefing
+        draait. Het staat nergens in de broncode en nergens in een logbestand.</li>
+    <li><strong>Handelingenlogboek:</strong> welke knop wanneer is ingedrukt, met het
+        identificatienummer van de taak of het bericht. Geen berichtinhoud.</li>
+    <li>De dagelijkse briefing wordt als e-mail naar hetzelfde account gestuurd en
+        blijft daar staan zolang ik hem bewaar.</li>
+  </ul>
+
+  <h2>Wie er toegang heeft</h2>
+  <p>Alleen ik. Het systeem draait op mijn eigen laptop, luistert alleen op het interne
+  netwerkadres van die machine, en is buiten die machine alleen bereikbaar via een
+  privénetwerk tussen mijn eigen apparaten, met een wachtwoord ervoor.</p>
+
+  <h2>Toegang intrekken</h2>
+  <p>De toegang tot het Google-account kan op elk moment worden ingetrokken via
+  <a href="https://myaccount.google.com/permissions" target="_blank" rel="noopener">de
+  pagina met accounttoegang</a> van Google. Daarna kan het systeem geen gegevens meer
+  ophalen.</p>
+
+  <h2>Beperkt gebruik van Google-gegevens</h2>
+  <p>Het gebruik van gegevens uit Google-API's door MAINFRAME voldoet aan het
+  <a href="https://developers.google.com/terms/api-services-user-data-policy"
+  target="_blank" rel="noopener">Google API Services User Data Policy</a>, inclusief de
+  eisen voor beperkt gebruik.</p>
+
+  <h2>Wijzigingen</h2>
+  <p>Verandert er iets aan wat het systeem doet, dan wordt deze pagina aangepast en de
+  datum bovenaan bijgewerkt.</p>
+
+  <footer>
+    <p>Vragen: contentagentmk1@gmail.com</p>
+  </footer>
+</main>
+</body>
+</html>
